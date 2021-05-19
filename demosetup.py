@@ -19,6 +19,7 @@ entity_yaml = {
 }
 collaboration = {
     'name': 'Vantage6-demo',
+    'encrypted': False,
     'participants': []
 }
 
@@ -33,7 +34,6 @@ for org in orgs:
     collaboration['participants'].append({
         'name': name,
         'api-key': api_key,
-        'encrypted': False
     })
 
     organization = {
